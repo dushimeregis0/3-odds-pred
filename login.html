@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - VIP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html">Home</a>
+    <a href="vip.html">VIP</a>
+    <a href="results.html">Results</a>
+    <a href="price.html">Price</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+</header>
+
+<div class="container">
+    <h1>Login to Access VIP</h1>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+    
+    <script>
+        function login() {
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            if(user === '07961' && pass === '66806') {
+                window.location.href = 'vip.html';
+            } else {
+                alert('Incorrect username or password!');
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
